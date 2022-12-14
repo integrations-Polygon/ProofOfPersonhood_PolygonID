@@ -33,7 +33,7 @@ This tutorial uses [Hardhat](https://hardhat.org/) as a development environment 
 
 6. Run set-request to send the zk request to the smart contract
     `npx hardhat run --network mumbai scripts/set-request.js`
-    - Successful tx means the age query has been set up: https://mumbai.polygonscan.com/tx/0x0aa557b705960e2bee1f17077389eddde168011bafc8e7cc3dd31ce6f1677f19
+    - Successful tx means the query has been set up: https://mumbai.polygonscan.com/tx/0x0aa557b705960e2bee1f17077389eddde168011bafc8e7cc3dd31ce6f1677f19
 
 
 ## Claim airdrop from a frontend
@@ -41,4 +41,4 @@ This tutorial uses [Hardhat](https://hardhat.org/) as a development environment 
 1. Design a proof request (see my example in qrValueProofRequestExample.json) and more info in the docs: [Query Based Requests](https://0xpolygonid.github.io/tutorials/wallet/proof-generation/types-of-auth-requests-and-proofs/#query-based-request)
     - Update the `contract_address` field to your deployed contract address
 
-2. Create a frontend with a QR code to the proof request. [Codesandbox example](https://codesandbox.io/s/frontend-claim-an-erc20-zk-airdrop-on-polygon-mumbai-forked-n5mhds?file=/index.js) A user should be able to scan the QR code from the Polygon ID app and trustlessly prove that they a person to claim the ERC20 airdrop without revealing their actual birthday. 
+2. Create a frontend with a QR code to the proof request. [Codesandbox example](https://codesandbox.io/s/frontend-claim-an-erc20-zk-airdrop-on-polygon-mumbai-forked-n5mhds?file=/index.js) A user should be able to scan the QR code from the Polygon ID app and trustlessly prove that they a person to claim the ERC20 airdrop without revealing their actual personhood. 
