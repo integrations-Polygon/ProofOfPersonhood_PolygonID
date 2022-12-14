@@ -10,7 +10,7 @@ This tutorial uses [Hardhat](https://hardhat.org/) as a development environment 
 
 2. Open the app and set a pin for security
 
-3. Follow the [Issue a Polygon ID claim](https://youtu.be/VClUFjs8lh8) YT video to issue yourself a Proof Of Personhood attesting if you are a VerifiedPerson of not.
+3. Follow the [Issue a Polygon ID claim](https://youtu.be/VClUFjs8lh8) YT video to issue yourself a Proof Of Personhood attesting if you are a VerifiedPerson or not.
 
 
 ## Instructions to compile and deploy the smart contract
