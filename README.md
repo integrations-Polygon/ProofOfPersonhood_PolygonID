@@ -26,7 +26,7 @@ This tutorial uses [Hardhat](https://hardhat.org/) as a development environment 
 
 4. Deploy smart contracts
     `npx hardhat run --network mumbai scripts/deploy.js`
- - results in x tx hash: 0xecf178144CceC09417412D66E2ecC8a2841eE228
+ - results in x contract address: 0xDa486713DfFf7F4244465E34C1786FFbe6d85604
  - example contract creation: https://mumbai.polygonscan.com/address/0xDa486713DfFf7F4244465E34C1786FFbe6d85604
 
 5. Update the `ERC20VerifierAddress` variable in scripts/set-request.js with your deployed contract address
