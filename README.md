@@ -10,7 +10,7 @@ This tutorial uses [Hardhat](https://hardhat.org/) as a development environment 
 
 2. Open the app and set a pin for security
 
-3. Follow the [Issue a Polygon ID claim](https://polygontechnology.notion.site/Issue-yourself-a-KYC-Age-Credential-claim-a06a6fe048c34115a3d22d7d1ea315ea) doc to issue yourself a KYC Age Credential attesting your date of birth.
+3. Follow the [Issue a Polygon ID claim](https://youtu.be/VClUFjs8lh8) YT video to issue yourself a Proof Of Personhood attesting your if you are a VerifiedPerson of not.
 
 
 ## Instructions to compile and deploy the smart contract
@@ -27,13 +27,13 @@ This tutorial uses [Hardhat](https://hardhat.org/) as a development environment 
 4. Deploy smart contracts
     `npx hardhat run --network mumbai scripts/deploy.js`
  - results in x tx hash: 0xecf178144CceC09417412D66E2ecC8a2841eE228
- - example contract creation: https://mumbai.polygonscan.com/address/0xecf178144ccec09417412d66e2ecc8a2841ee228
+ - example contract creation: https://mumbai.polygonscan.com/address/0xDa486713DfFf7F4244465E34C1786FFbe6d85604
 
 5. Update the `ERC20VerifierAddress` variable in scripts/set-request.js with your deployed contract address
 
 6. Run set-request to send the zk request to the smart contract
     `npx hardhat run --network mumbai scripts/set-request.js`
-    - Successful tx means the age query has been set up: https://mumbai.polygonscan.com/tx/0x2ddb2db7b3d35cf7cdf658209b257fd2a51c49df2249bf46ede8979eb8410ffb
+    - Successful tx means the age query has been set up: https://mumbai.polygonscan.com/tx/0x0aa557b705960e2bee1f17077389eddde168011bafc8e7cc3dd31ce6f1677f19
 
 
 ## Claim airdrop from a frontend
@@ -41,4 +41,4 @@ This tutorial uses [Hardhat](https://hardhat.org/) as a development environment 
 1. Design a proof request (see my example in qrValueProofRequestExample.json) and more info in the docs: [Query Based Requests](https://0xpolygonid.github.io/tutorials/wallet/proof-generation/types-of-auth-requests-and-proofs/#query-based-request)
     - Update the `contract_address` field to your deployed contract address
 
-2. Create a frontend with a QR code to the proof request. [Codesandbox example](https://codesandbox.io/s/zisu81?file=/index.js) A user should be able to scan the QR code from the Polygon ID app and trustlessly prove that they are old enough to claim the ERC20 airdrop without revealing their actual birthday. 
+2. Create a frontend with a QR code to the proof request. [Codesandbox example](https://codesandbox.io/s/frontend-claim-an-erc20-zk-airdrop-on-polygon-mumbai-forked-n5mhds?file=/index.js) A user should be able to scan the QR code from the Polygon ID app and trustlessly prove that they a person to claim the ERC20 airdrop without revealing their actual birthday. 
