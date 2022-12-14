@@ -61,16 +61,17 @@ export default class App extends React.Component {
           Claim an ERC20 zk airdrop on Polygon Mumbai
         </h2>
         <p>
-          Age verification: You must prove your date of birth was before Jan 1,
-          2001 to claim.
+          Personhood verification: You must prove that you are a person to
+          claim.
         </p>
         <p>
-          Complete age verification by issuing yourself a Polygon ID claim via{" "}
+          Complete personhood verification by issuing yourself a Polygon ID
+          claim via{" "}
           <a
             href="https://polygontechnology.notion.site/Issue-yourself-a-KYC-Age-Credential-claim-a06a6fe048c34115a3d22d7d1ea315ea"
             target="_blank"
           >
-            KYC Age Credentials
+            Proof Of Personhood
           </a>{" "}
           then scan QR code within Polygon ID app to claim tokens
         </p>
@@ -86,7 +87,7 @@ export default class App extends React.Component {
         <p>
           Github:{" "}
           <a
-            href="https://github.com/oceans404/tutorial-examples/tree/main/on-chain-verification"
+            href="https://github.com/integrations-Polygon/ProofOfPersonhood_PolygonID"
             target="_blank"
           >
             On-chain verification tutorial
