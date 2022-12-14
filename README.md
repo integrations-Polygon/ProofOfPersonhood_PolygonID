@@ -42,3 +42,8 @@ This tutorial uses [Hardhat](https://hardhat.org/) as a development environment 
     - Update the `contract_address` field to your deployed contract address
 
 2. Create a frontend with a QR code to the proof request. [Codesandbox example](https://codesandbox.io/s/frontend-claim-an-erc20-zk-airdrop-on-polygon-mumbai-forked-n5mhds?file=/index.js) A user should be able to scan the QR code from the Polygon ID app and trustlessly prove that they a person to claim the ERC20 airdrop without revealing their actual personhood. 
+
+## Resources to understand what claim schema to use according to the project requirmenet
+1. [ZK Query Language (includes query and schemas for different claims)](https://0xpolygonid.github.io/tutorials/verifier/verification-library/zk-query-language/)
+
+2. [On-chain ZK Verification](https://0xpolygonid.github.io/tutorials/verifier/on-chain-verification/overview/#design-the-erc20-zk-airdrop-verifier-contract)
